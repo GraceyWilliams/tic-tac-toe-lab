@@ -1,8 +1,44 @@
 // "use strict";
+//when clicked Jokes
+//fetch a GET Fetch Request
+//manipulate the the div
 document.addEventListener('DOMContentLoaded', () =>{
     let gameReset = document.querySelector('#restartButton').addEventListener('click', handleGameRestart);
     let cellBlock = document.querySelector('#boxformat').addEventListener('click', cellChecked);
+    let jokesButton = document.getElementById('jokes').addEventListener('click', jokesFetch);
+    //let answerButton = document.getElementById('answers').addEventListener('click', answersFetch);
 })
+
+// function answerFetch () {
+//     debugger
+//     fetch('https://official-joke-api.appspot.com/random_joke')
+//     .then(response => {return response.json()})
+//     .then(data => {
+//         answerDiv(data)
+//     })
+// }
+
+// function answerDiv (type) {
+//     //debugger;
+//     document.getElementById('random-answers').innerText = type['punchline']
+// }
+
+function jokesFetch (clicks) {
+    debugger;
+    fetch('https://official-joke-api.appspot.com/random_joke')
+    .then(response => {return response.json()})
+    .then(data => {
+        jokesDiv(data)
+    })
+}
+
+function jokesDiv(type) {
+    //debugger;
+    document.getElementById('random-jokes').innerText = `Jokes: ${type['setup']}
+    Answers: ${type['punchline']}`
+    //document.getElementById('random-jokes').innerText = type['setup']
+    //document.getElementById('random-jokes').innerText = type['punchline']
+}
 
 const player_X = 'X';
 const player_O = 'O';

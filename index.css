@@ -5,6 +5,22 @@ h1 {
     text-align: center;
 }
 
+#random-jokes {
+    margin: auto;
+    color: coral;
+    /* display: flex; */
+    font-size: 20px;
+    font-style: italic;
+    /* flex-direction: column; */
+}
+
+/* #random-answers {
+    margin: auto;
+    color: coral;
+    font-size: 20px;
+    font-style: italic;
+} */
+
 #intro {
     margin: auto;
     color: brown;
@@ -63,15 +79,6 @@ h3 {
     justify-content: space-evenly;
 }
 
-#gameTime {
-    /* padding: 40px; */
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 #boxformat {
     width: 500px;
     display: flex;
@@ -90,6 +97,15 @@ h3 {
     align-items: center;
 }
 
+#gameTime {
+    /* padding: 40px; */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 button {
     color: brown;
     font-size: 20px;
@@ -104,3 +120,39 @@ button:hover {
     cursor: pointer;
     transform: translate(-2px);
 }
+
+#random-jokes {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ /* #random-answers {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    /* margin: auto;
+    color: brown;
+    display: flex;
+    justify-content: flex-end; */
+/* } */
+
+/* #jokes {
+    color: brown;
+    display: flex;
+    font-size: 20px;
+    border-color: white;
+    padding: 10px 20px;
+    transition: 200ms transform;
+    background-color: coral;
+    border-radius: 25% 10%;
+    justify-content: center;
+}
+#jokes:hover {
+    cursor: pointer;
+    transform: translate(-2px);
+} */
+
