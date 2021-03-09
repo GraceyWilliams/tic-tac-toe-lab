@@ -36,9 +36,6 @@ function cellChecked (event) {
                 currentCounterO++;
                 oCounter.innerText = currentCounterO;
             }
-            //debugger;
-            //handleGameRestart();
-            //console.log(text)
             return;
         } else if (counter === 9) {
             // console.log('draw')
@@ -84,6 +81,10 @@ function playerHasWon () {
             console.log(`${currentPlayer} wins horizantally.`);
             return true;
         }
+        if(gameState[2] === currentPlayer && gameState[6] === currentPlayer) {
+            console.log(`${currentPlayer} wins diaginally 2`);
+            return true;
+        }
     }
 }
 
@@ -97,6 +98,7 @@ function handleGameRestart() {
     [...cells].forEach((cell) => {
     cell.innerText = '';
     });  //what to get rid of the text from the cell 
+    counter = 0;
     const gameRecord = document.getElementById('gameOn');
     gameRecord.innerText = "Let's Play";
     //console.log(gameRecord)
