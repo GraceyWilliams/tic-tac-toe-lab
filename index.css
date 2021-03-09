@@ -58,6 +58,11 @@ h3 {
     flex-direction: column;
 }
 
+#currentPlayer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #gameTime {
     /* padding: 40px; */
     display: flex;
